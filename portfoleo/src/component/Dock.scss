@@ -1,0 +1,66 @@
+.dock{
+
+display: flex;
+gap: 0.5rem;
+position: absolute;
+bottom: 1rem;
+left: 50%;
+transform: translate(-50% );
+background-color: rgba(65, 64, 64, 0.209);
+backdrop-filter: blur(5px);
+padding-inline: 1rem;
+padding-block: 0.5rem;
+border-radius: 0.75rem;
+
+
+
+.github{
+  background-color: black;
+}
+.notes{
+  background-color: rgb(241, 199, 62);
+}
+.pdf{
+  background-color:#FF3B54;
+}
+.calendar{
+  background-color: #6959FF;
+}
+.spotify{
+background-color: rgb(8, 224, 8);
+}
+.mail{
+  background-color: #4B3EFF;
+  
+}
+.link{
+    background-color: #994FA5;
+}
+.cli{
+  background-color: #010101;
+}
+.icon{
+  width: 2.8rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 0.5rem;
+  aspect-ratio: 1/1;
+  transition: all 0.3s cubic-bezier(0.19,1,0.22,1);
+
+}
+.icon:hover{
+  transform: scale(1.4) translateY(-10%);
+}
+.icon:hover + .icon,.icon:has(+.icon:hover){
+
+  transform: scale(1.1) translateY(-10%);
+
+}
+
+
+
+}
+
+

@@ -1,15 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,body{
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
+  
 }
 
-body{
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url(./asset/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+body {
   background-color: black;
 }
-
