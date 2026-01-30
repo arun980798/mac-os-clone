@@ -12,7 +12,9 @@
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-rnd": "^10.5.2",
     "remixicon": "^4.8.0",
+    "rnd": "^1.0.10",
     "sass": "^1.97.2"
   },
   "devDependencies": {
