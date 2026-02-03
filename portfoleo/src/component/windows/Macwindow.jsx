@@ -21,7 +21,7 @@ export const Macwindow = ({ children }) => {
           </div>
           <div className="title">arun rajput-zsh</div>
         </div>
-        <div className="body">{children}</div>
+        <div className="body main-content">{children}</div>
       </div>
     </Rnd>
   );
