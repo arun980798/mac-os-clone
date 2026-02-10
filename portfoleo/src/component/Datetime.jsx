@@ -8,6 +8,10 @@ function Datetime() {
       setNow(new Date());
     }, 60000); // update every minute
 
+
+//hedk
+
+
     return () => clearInterval(interval);
   }, []);
 
