@@ -1,0 +1,93 @@
+/**
+ * @file: profile.config.ts
+ * @author: Arun Rajput [cite: 8]
+ * @summary: Aspiring Full-Stack Developer & JavaScript Enthusiast.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "JavaScript (ES6+)", // Focus: Cohort 2.0
+    "React.js",          // Learning Path
+    "Redux.js",          // [cite: 7]
+    "TailwindCSS",       
+  ],
+  backend: [
+    "Node.js",           // Learning Path
+    "Express.js",
+    "MongoDB",
+  ],
+  tools: [
+    "Figma",             // [cite: 6]
+    "Git", 
+    "Postman", 
+    "VS Code"
+  ]
+};
+
+// --------------------------------------------------
+// 2. EXPERIENCE LOG (Current Learning & Education)
+// --------------------------------------------------
+
+class DeveloperJourney {
+  
+  /** * CURRENT FOCUS: Intensive Coding Bootcamp
+   * @period 2025 - Present 
+   */
+  public async Sheryians_Coding_School(): Promise<SkillSet> {
+    const program = "Cohort 2.0";
+    const status = "Leveling up JavaScript skills daily";
+    
+    // Key Focus Areas
+    const core = [
+      "Making code truly dynamic",
+      "Mastering logic & decision-making",
+      "Building high-performance web apps"
+    ];
+    
+    return { program, status, core };
+  }
+
+  /** * ACADEMIC FOUNDATION
+   * @period 2023 - 2026 [cite: 11]
+   */
+  public Vikrant_University(): void {
+    this.degree = "BCA, Computer Programming"; // [cite: 13]
+    this.location = "Gwalior, India"; // [cite: 9]
+    this.specialization = "Specific Applications"; // [cite: 13]
+  }
+}
+
+// --------------------------------------------------
+// 3. PROJECT & LEARNING MILESTONES
+// --------------------------------------------------
+
+interface LearningMilestone {
+  day: number;
+  status: string;
+  focus: string;
+}
+
+const progressTracker: LearningMilestone[] = [
+  {
+    day: 0, // Update this based on your current day!
+    status: "Completed",
+    focus: "JavaScript Foundations & Dynamic Logic",
+  }
+];
+
+// --------------------------------------------------
+// 4. CONTACT & IDENTITY
+// --------------------------------------------------
+
+const identity = {
+  name: "Arun Rajput", // [cite: 8]
+  linkedin: "linkedin.com/in/arun-rajput-592a68373", // [cite: 3, 4]
+  phone: "+91 8817689479", // [cite: 2]
+  motto: "☕ Leveling up one line of code at a time."
+};
+
+export default new DeveloperJourney();
