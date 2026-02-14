@@ -33,11 +33,11 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
 
 
 
-const Ghithub = () => {
+const Ghithub = ({ windowName, setWindowsState }) => {
 
   return (
     <div >
-      <Macwindow>
+      <Macwindow windowName={windowName} setWindowsState={setWindowsState} >
         <div className="cover">
         <div className="profile">
           <div className="imgeo">
@@ -65,60 +65,3 @@ const Ghithub = () => {
 };
 
 export default Ghithub;
-
-
-
-
-
-//    <div class="project-card">
-//    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000"  class="project-img"/>
-
-//     <div class="card-body">
-//         <h3 class="title">Scheds - A Course Schedule Generator</h3>
-
-//         <p class="description">
-//             My proudest project yet, a comprehensive course schedule generator application built with ASP.NET Core MVC.
-//         </p>
-
-//         <div class="tags">
-//             <span>ASP.NET Core</span>
-//             <span>C#</span>
-//             <span>Entity Framework</span>
-//             <span>SQL Server</span>
-//             <span>Bootstrap</span>
-//             <span>jQuery</span>
-//         </div>
-
-//         <div class="links">
-//             <a href="https://github.com/microsoft/dotnet" target="_blank">GitHub Repo</a>
-//             <a href="https://dotnet.microsoft.com/" target="_blank">Live Demo</a>
-//         </div>
-//     </div>
-// </div>
-
-
-
-
-// <div>
-    
-
-//    <div class="project-card">
-//    <img src={data.image}  class="project-img"/>
-
-//     <div class="card-body">
-//         <h3 class="title">{data.title}</h3>
-
-//         <p class="description"> {data.description} </p>
-
-//         <div class="tags">
-            
-//            {data.tags.map(tag=><span>{tag}</span>)}
-//         </div>
-
-//         <div class="links">
-//             <a href={data.repoLink} target="_blank">GitHub Repo</a>
-//             <a href={data.demoLink} target="_blank">Live Demo</a>
-//         </div>
-//     </div>
-// </div>
-//    </div>
