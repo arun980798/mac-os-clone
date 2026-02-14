@@ -2,7 +2,7 @@ import React from 'react'
 import "./Nav.scss"
 import Datetime from './Datetime'
 
-const Nav = () => {
+const Nav = ({changeImage}) => {
   return (
    <nav>
     <div className="left nav-side">
@@ -16,6 +16,7 @@ const Nav = () => {
       <div className="nev-itam"><p>terminal</p></div>
     </div>
     <div className="right nav-side">
+      <button onClick={changeImage} >changeImage</button>
       <div className="nav-icon">
         <img src="/dock-icon/wifi.svg" alt="" />
       </div>
