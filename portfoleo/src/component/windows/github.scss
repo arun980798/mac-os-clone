@@ -31,6 +31,7 @@ max-width: 10rem;
       background-position:center;
       border-radius: 50%;
     }
+    
   }
   .info{
     display: flex;
@@ -47,6 +48,18 @@ max-width: 10rem;
        color: #8b949e;
        font-weight: 300;
     }
+      .profilelink{
+        font-size: 1.2rem;
+        color: #58a6ff;
+        text-decoration: none;
+        margin-top: 1rem;
+        transition: all 0.7s ease;
+      }
+      .profilelink:hover{
+        text-decoration: underline;
+        color: #2c6db8;
+       
+      }
   }
 
 }

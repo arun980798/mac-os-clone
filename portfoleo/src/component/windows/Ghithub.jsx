@@ -33,20 +33,22 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
 
 
 
-const Ghithub = ({ windowName, setWindowsState }) => {
+const Ghithub = ({ windowName, setWindowsState ,setdockvisiblity }) => {
 
   return (
     <div >
-      <Macwindow windowName={windowName} setWindowsState={setWindowsState} >
+      <Macwindow windowName={windowName} setWindowsState={setWindowsState} setdockvisiblity={setdockvisiblity}>
         <div className="cover">
         <div className="profile">
           <div className="imgeo">
             <img src="https://images.unsplash.com/photo-1503431128871-cd250803fa41?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            
           </div>
           <div className="info">
             <h2 className="name">Arun rajput </h2>
             <h3 className="role">frontend devloper</h3>
             <p className="shortdiscription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repudiandae! Sed ad ullam eum culpa debitis voluptates vero eveniet optio corporis mollitia? Impedit, eaque. Nihil eius rem ullam tempore aspernatur.</p>
+            <a href="https://github.com/arun980798" target="_blank" className="profilelink">View GitHub Profile</a>
           </div>
         </div>
         <div className="cards">

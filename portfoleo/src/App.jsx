@@ -9,6 +9,7 @@ import Resume from "./component/windows/Resume";
 import Spotfy from "./component/windows/Spotfy";
 
 function App() {
+  let [dockvisiblity, setdockvisiblity] = useState(true);
   let [imgindx, setimgindx] = useState(0);
   let imgurl = [
     "./asset/bg1.jpg",
@@ -37,18 +38,18 @@ function App() {
   return (
     <main style={{ backgroundImage: `url(${imgurl[imgindx]})` }}>
       <Nav changeImage={changeImage} />
-      <Dock windowsState={windowsState} setWindowsState={setWindowsState} />
+     {dockvisiblity && <Dock setWindowsState={setWindowsState} />}
       {windowsState.github && (
-        <Ghithub windowName="github" setWindowsState={setWindowsState} />
+        <Ghithub windowName="github" setWindowsState={setWindowsState} setdockvisiblity={setdockvisiblity} />
       )}
       {windowsState.note && (
-        <Note windowName="note" setWindowsState={setWindowsState} />
+        <Note windowName="note" setWindowsState={setWindowsState} setdockvisiblity={setdockvisiblity} />
       )}
       {windowsState.resume && (
-        <Resume windowName="resume" setWindowsState={setWindowsState} />
+        <Resume windowName="resume" setWindowsState={setWindowsState} setdockvisiblity={setdockvisiblity} />
       )}
       {windowsState.spotify && (
-        <Spotfy windowName="spotify" setWindowsState={setWindowsState} />
+        <Spotfy windowName="spotify" setWindowsState={setWindowsState} setdockvisiblity={setdockvisiblity} />
       )}
     </main>
   );
