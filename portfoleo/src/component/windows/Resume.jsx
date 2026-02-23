@@ -3,10 +3,10 @@ import { Macwindow } from "./Macwindow";
 import "./resume.scss";
 
 
-const Resume = ({ windowName, setWindowsState }) => {
+const Resume = ({ windowName, setWindowsState ,setdockvisiblity }) => {
   return (
     <div>
-      <Macwindow windowName={windowName} setWindowsState={setWindowsState} >
+      <Macwindow windowName={windowName} setWindowsState={setWindowsState} setdockvisiblity={setdockvisiblity}>
        <div className="resume-window">
                 <embed src="/resume.pdf" frameborder="0"></embed>
             </div>
