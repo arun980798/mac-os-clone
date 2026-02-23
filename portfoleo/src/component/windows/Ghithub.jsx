@@ -9,7 +9,7 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
     
 
    <div class="project-card">
-   <img src={data.image}  class="project-img"/>
+   <img src={data.image}  className="project-img"/>
 
     <div class="card-body">
         <h3 class="title">{data.title}</h3>

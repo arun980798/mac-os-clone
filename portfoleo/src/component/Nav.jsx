@@ -16,7 +16,7 @@ const Nav = ({changeImage}) => {
       <div className="nev-itam"><p>terminal</p></div>
     </div>
     <div className="right nav-side">
-      <button onClick={changeImage} >changeImage</button>
+      <button onClick={changeImage} >change Image</button>
       <div className="nav-icon">
         <img src="/dock-icon/wifi.svg" alt="" />
       </div>
